@@ -5,21 +5,21 @@
 class Iris < Formula
   desc "A highly customizable, blazing fast and context-aware CLI autocomplete/navigation tool"
   homepage "https://github.com/versenilvis/iris"
-  version "0.4.21"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/versenilvis/IRIS/releases/download/v0.4.21/iris_darwin_amd64.tar.gz"
-      sha256 "f8e961791d8aaf6b9856699cdfcc5f52956f4fb78d6166e1ea7dd90ebdd1edb2"
+      url "https://github.com/versenilvis/IRIS/releases/download/v0.5.0/iris_darwin_amd64.tar.gz"
+      sha256 "faab5aa7ca97c6e8f72ea5047138233a8cdcf31c1054d3ef002c98d63ee6564b"
 
       define_method(:install) do
         bin.install "iris"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/versenilvis/IRIS/releases/download/v0.4.21/iris_darwin_arm64.tar.gz"
-      sha256 "8b3c4696a37d5d06cbee31815f78fa73001ba7465e7beac2485b6b693a548cdc"
+      url "https://github.com/versenilvis/IRIS/releases/download/v0.5.0/iris_darwin_arm64.tar.gz"
+      sha256 "6a3742f1601129ee5b82f72d1f1f1dd419926298b18d16b77cf259381fc72caf"
 
       define_method(:install) do
         bin.install "iris"
@@ -29,15 +29,15 @@ class Iris < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/versenilvis/IRIS/releases/download/v0.4.21/iris_linux_amd64.tar.gz"
-      sha256 "ba29506a43d623171896588191f14b3768bc4d21c33119a021db221b81c0d97b"
+      url "https://github.com/versenilvis/IRIS/releases/download/v0.5.0/iris_linux_amd64.tar.gz"
+      sha256 "0d837ddbc05b339beefea2bce38e06ae7bb37bfac21687995bd747c160b8e134"
       define_method(:install) do
         bin.install "iris"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/versenilvis/IRIS/releases/download/v0.4.21/iris_linux_arm64.tar.gz"
-      sha256 "64a174033f9e90ccc66e40dee17e604e85805ab28130540b88ff6f9a4468437a"
+      url "https://github.com/versenilvis/IRIS/releases/download/v0.5.0/iris_linux_arm64.tar.gz"
+      sha256 "177ff2da3b81e99d218cfe2311c3dc3c2f7e9a4e316475cfc2ab39ff3aeaf8da"
       define_method(:install) do
         bin.install "iris"
       end
